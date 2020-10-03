@@ -28,3 +28,38 @@ a = a - b-c
 print("After swapping a = ",a,", b = ",b,", c = ",c) 
 
 
+# Find the factorial of a number
+n=int(input()) 
+fact=1 
+while n>0: 
+fact=fact*n 
+n=n-1 
+print(fact) 
+
+#Check whether a number is Perfect number or not
+
+n=int(input()) 
+i=1 
+while i<=n/2: 
+  if n%i==0: 
+   sum+=i 
+  i=i+1 
+if sum==n: 
+  print("Yes") 
+else: 
+  print("No") 
+  
+  #Check whether number is prime or not. 
+  
+  n=int(input()) 
+if n<=1: 
+  print("Not Prime") 
+else: 
+  flag=0 
+  for i in range(2,n//2+1): 
+   if n%i==0: 
+    print("Not Prime") 
+    flag=1 
+    break 
+  if flag==0: 
+   print("Prime") 
